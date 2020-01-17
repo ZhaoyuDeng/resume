@@ -1,204 +1,354 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-cn">
 
 <head>
-    <meta charset="UTF-8">
-    <title>简历生成器</title>
-    <link rel="stylesheet" href="static/css/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remodal/1.1.0/remodal.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remodal/1.1.0/remodal-default-theme.min.css">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/remodal/1.1.0/remodal.min.js"></script>
-    <script src="static/js/script.js"></script>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no"
+    />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <meta name="format-detection" content="email=no" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="renderer" content="webkit">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="Amaze UI" />
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+    <meta http-equiv="Pragma" content="no-cache" />
+    <meta http-equiv="Expires" content="0" />
+    <title>[CV] 邓昭宇</title>
+    <link rel="shortcut icon" href="assets/images/icon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="assets/css/typo.css">
+    <link rel="stylesheet" href="assets/css/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/css/index.css">
+    <script>
+        function loading() {
+            document.getElementsByClassName('avatar')[0].style.display = 'block';
+            document.getElementsByClassName('loading')[0].style.display = 'none';
+        }
+    </script>
 </head>
 
 <body>
-    <div class="container" id="cv">
-        <div class="side">
-            <div class="me">
-                <div class="portrait"></div>
-                <div class="remodal remodal-img" data-remodal-id="portrait-modal">
-                    <h3>请输入图片URL地址：</h3>
-                    <br/>
-                    <input type="text" id="avatar-url">
-                    <button data-remodal-action="confirm" class="remodal-confirm">确定</button>
-                </div>
-                <h1 id="username" >ekCit</h1>
-                <h4 id="persona-tag" >Python / Web / 互联网教育</h4>
-            </div>
-            <div class="profile info-unit">
-                <h2 class="info-header"><i class="iconfont icon-person"></i> <span class="info-title">基本信息</span></h2>
-                <hr>
-                <ul class="info-list">
+
+    <header class="header"></header>
+
+    <article class="container">
+        <section class="side" id="side">
+
+            <!-- 个人肖像 -->
+            <section class="me">
+                <section class="portrait">
+                    <div class="loading">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                    <!-- 头像照片 -->
+                    <img class="avatar" src="assets/images/avatar.jpg" onload="loading()">
+                </section>
+
+                <h1 class="name">邓昭宇</h1>
+                <h4 class="info-job">MATLAB / Python / 电子 / 心理 / 认知神经</h4>
+
+            </section>
+
+            <!-- 基本信息 -->
+            <section class="profile info-unit">
+                <h2>
+                    <i class="fa fa-user" aria-hidden="true"></i>基本信息</h2>
+                <hr/>
+                <ul>
                     <li>
-                        <label class="left-label">姓名</label><span class="label-value">XXX</span></li>
+                        <label>个人信息</label>
+                        <span>邓昭宇 / 男 / 22岁</span>
+                    </li>
                     <li>
-                        <label class="left-label">学历</label><span class="label-value">本科</span></li>
+                        <label>英语水平</label>
+                        <span>CET-6 / IELTS-5.5</span>
+                    </li>
                     <li>
-                        <label class="left-label">毕业院校</label><span class="label-value">北京邮电大学</span></li>
-                    <li>
-                        <label class="left-label">毕业年份</label><span class="label-value">2017</span></li>
+                        <label>计算机水平</label>
+                        <span>C / Java二级</span>
+                    </li>
                 </ul>
-            </div>
-            <div class="contact info-unit">
-                <h2 class="info-header"><i class="iconfont icon-call"></i> <span class="info-title">联系方式</span></h2>
-                <hr>
-                <ul class="info-list">
+            </section>
+
+            <!-- 联系方式 -->
+            <section class="contact info-unit">
+                <h2>
+                    <i class="fa fa-phone" aria-hidden="true"></i>联系方式</h2>
+                <hr/>
+                <ul>
                     <li>
-                        <label class="left-label">手机</label><span class="label-value">182XXXXXXXX</span></li>
+                        <label>手机</label>
+                        <a href="tel:15580920396" target="_blank">155-8092-0396</a>
+                    </li>
                     <li>
-                        <label class="left-label">邮箱</label><span class="label-value">crmrc2014@gmail.com</span></li>
+                        <label>邮箱</label>
+                        <a href="mailto:isaaczydeng@foxmail.com" target="_blank">isaaczydeng@foxmail.com</a>
+                    </li>
                     <li>
-                        <label class="left-label">个人主页</label><span class="label-value">exit-tixe.me</span></li>
+                        <label>个人主页</label>
+                        <a href="http://Isaac-Deng.github.io" target="_blank">0b11111110.com/</a>
+                    </li>
                     <li>
-                        <label class="left-label">Github</label><span class="label-value">github.com/ekCit</span></li>
+                        <label>Github</label>
+                        <a href="https://github.com/Isaac-Deng" target="_blank">github.com/Isaac-Deng</a>
+                    </li>
                 </ul>
-            </div>
-            <div class="skill info-unit">
-                <h2 class="info-header"><i class="iconfont icon-star"></i> <span class="info-title">技能点</span></h2>
-                <hr>
-                <ul class="progress-list">
+            </section>
+
+            <!-- 技能点 -->
+            <section class="skill info-unit">
+                <h2>
+                    <i class="fa fa-code" aria-hidden="true"></i>技能点</h2>
+                <hr/>
+                <ul>
                     <li>
-                        <label class="left-label">Python</label>
+                        <label>MATLAB</label>
+                        <progress value="90" max="100"></progress>
+                    </li>
+                    <li>
+                        <label>C</label>
+                        <progress value="90" max="100"></progress>
+                    </li>
+                    <li>
+                        <label>Python</label>
                         <progress value="80" max="100"></progress>
                     </li>
                     <li>
-                        <label class="left-label">html/css</label>
+                        <label>Java</label>
                         <progress value="70" max="100"></progress>
                     </li>
                     <li>
-                        <label class="left-label">Javascript</label>
-                        <progress value="60" max="100"></progress>
+                        <label>嵌入式开发</label>
+                        <progress value="90" max="100"></progress>
                     </li>
                     <li>
-                        <label class="left-label">机器学习</label>
-                        <progress value="60" max="100"></progress>
+                        <label>数字信号分析</label>
+                        <progress value="80" max="100"></progress>
                     </li>
                 </ul>
-            </div>
-            <div class="stack info-unit">
-                <h2 class="info-header"><i class="iconfont icon-build"></i> <span class="info-title">技术栈</span></h2>
-                <hr>
-                <ul class="stack-list">
-                    <li>
-                        <label class="left-label">前端</label><span class="label-value">jQuery、Angular.js、React.js</span></li>
-                    </li>
-                    <li>
-                        <label class="left-label">后端</label><span class="label-value">Flask、Django、Twisted、Node.js、MongoDB、MySQL、Redis</span></li>
-                    </li>
-                    <li>
-                        <label class="left-label">其它</label><span class="label-value">我全都是瞎写的。</span></li>
-                    </li>
-                </ul>
-            </div>
+            </section>
 
-            <div class="code info-unit">
-                <h2 class="info-header"><i class="iconfont icon-weixin"></i> <span class="info-title">个人微信</span></h2>
-                <hr>
-                <div class="weixin">
-                    <img src="static/image/weixin.png" alt="">
+            <section class="qrcode info-unit">
+                <h2><i class="fa fa-qrcode" aria-hidden="true"></i>微信二维码</h2>
+                <hr/>
+                <img src="assets/images/qrcode.jpg" style="width: 100%;" alt="">
+            </section>
 
-                </div>
-            </div>
-            <div class="remodal remodal-img" data-remodal-id="weixin-modal">
-                <h3>请输入图片URL地址：</h3>
-                <br/>
-                <input type="text" id="weixin-url">
-                <button data-remodal-action="confirm" class="remodal-confirm">确定</button>
-            </div>
-        </div>
-        <div class="main">
-            <div class="education info-unit right-list">
-                <h2 class="info-header"><i class="iconfont icon-education"></i> <span class="info-title">教育经历</span></h2>
-                <hr>
-                <ul class="experience-list">
+
+        </section>
+
+        <section class="main">
+
+            <!-- 教育经历 -->
+            <section class="edu info-unit">
+                <h2>
+                    <i class="fa fa-graduation-cap" aria-hidden="true"></i>教育经历</h2>
+                <hr/>
+                <ul>
                     <li>
-                        <h3>北京邮电大学 - 网络工程专业（本科）2012-2017</h3>
-                        <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                        </p>
+                        <h3>
+                            <span>湖南师范大学 - 电子信息科学技术（本科学位）</span>
+                            <time>2016.9-2020.7</time>
+                        </h3>
+                        <p>[主要课程] 线性代数、C语言、MATLAB及应用、概率论与数理统计、信号与系统、数字信号处理、DSP技术及其应用</p>
+                    </li>
+                    <li>
+                        <h3>
+                            <span>湖南师范大学 - 应用心理学（本科辅修学位）</span>
+                            <time>2017.9-2019.7</time>
+                        </h3>
+                        <p>[主要课程] 心理统计学、实验心理学、心理测量学、精神病学基础、临床心理学</p>
                     </li>
                 </ul>
-            </div>
-            <div class="work info-unit right-list">
-                <h2 class="info-header"><i class="iconfont icon-work"></i> <span class="info-title">工作经历</span></h2>
-                <hr>
-                <ul class="experience-list">
+            </section>
+
+            <!-- 竞赛经历 -->
+            <section class="work info-unit">
+                <h2>
+                    <i class="fa fa-shopping-bag" aria-hidden="true"></i>竞赛经历</h2>
+                <hr/>
+                <ul>
                     <li>
-                        <h3>北京创客空间－实习生（实习）</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                        </p>
+                        <h3>
+                            <span>[1]2018年“创青春”湖南省大学生创业大赛（铜奖）</span>
+                            <time>2017.10-2018.5</time>
+                        </h3>
+                        <ul class="info-content">
+                            <li>《茶行业全周期物联数据信息化系统》项目，技术栈：<mark>C+Java+HTML+STM32</mark></li>
+                            <li>[贡献]配合前端网页和嵌入式硬件端，编写能进行分析、交互功能的云端服务器</li>
+                            <li>阿里云上的云服务器需要通过局域网接收带传感器的单片机通过无线传输的信息，并进行解析进一步加工，同时把处理后的信息传送到前端进行显示；反过来，需要把前端的控制信息传到单片机进行实时控制</li>
+                            <li>同时还申请了软件著作权和专利，本人参与了一篇专利的申请</li>
+                        </ul>
                     </li>
                     <li>
-                        <h3>实验楼－课程内容（实习）</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                        </p>
-                    </li>
-                </ul class="experience-list">
-            </div>
-            <div class="project info-unit right-list">
-                <h2 class="info-header"><i class="iconfont icon-project"></i> <span class="info-title">个人项目</span></h2>
-                <hr>
-                <ul class="experience-list">
-                    <li>
-                        <h3>基于 Qt 5 的文本编辑器</h3>
-                        <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam。Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                            <br/>
-                        </p>
+                        <h3>
+                            <span>[2]2018年湖南省大学生电子设计竞赛（优胜奖）</span>
+                            <time>2018.6-2018.8</time>
+                        </h3>
+                        <ul class="info-content">
+                            <li>技术栈：<mark>C+STM32+模拟/数字电路</mark></li>
+                            <li>进行STM32单片机的原理与应用、常用电子模块的接口交互、电子测量设备的应用学习</li>
+                            <li>进行模拟/数字电路的设计、焊接、使用</li>
+                            <li>学习应用PID控制算法、声音信号的DSP数字信号处理</li>
+                        </ul>
                     </li>
                     <li>
-                        <h3>基于 Flask 的主机监视系统</h3>
-                        <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                        </p>
-                    </li>
-                    <li>
-                        <h3>基于 Live2D 与 clmtrackr 的山寨 Facerig</h3>
-                        <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                        </p>
-                    </li>
-                    <li>
-                        <h3>如果项目太少，可以在实验楼上找项目做啊:D</h3>
-                        <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                        </p>
+                        <h3>
+                            <span>[3]2018年湖南省大学生物联网应用创新设计竞赛（二等奖）</span>
+                            <time>2018.8-2018.10</time>
+                        </h3>
+                        <ul class="info-content">
+                            <li>《茶生产物联技术云端信息系统》，技术栈：<mark>C+Java+HTML+JavaScript+STM32+视频流服务</mark></li>
+                            <li>[贡献]配合嵌入式硬件端，编写改进能进行分析、交互功能的云端服务器，同时完善前端系统功能，并加入视频流服务</li>
+                            <li>阿里云上的云服务器需要通过局域网接收带传感器的单片机通过无线传输的信息，并进行解析进一步加工，同时把处理后的信息传送到前端进行显示；反过来，需要把前端的控制信息传到单片机进行实时控制。视频流服务需要使用摄像头通过流式传输传到服务器并实时监控</li>
+                            <li>本人上台讲述展示项目功能、意义等内容</li>
+                        </ul>
                     </li>
                 </ul>
-            </div>
-            <div class="trophy info-unit">
-                <h2 class="info-header"><i class="iconfont icon-trophy"></i> <span class="info-title">奖项与证书</span></h2>
-                <hr>
-                <ul class="experience-list">
+            </section>
+
+            <!-- 个人项目 -->
+            <section class="project info-unit">
+                <h2>
+                    <i class="fa fa-terminal" aria-hidden="true"></i>个人项目</h2>
+                <hr/>
+                <ul>
                     <li>
-                        <h3>小学生作文二等奖</h3>
-                        <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam。
-                        </p>
-                    </li> 
+                        <h3>
+                            <span>[1]基于Hadoop的大数据平台架设探讨（校级创新项目）</span>
+                            <time>2017.5-2018.5</time>
+                        </h3>
+                        <ul class="info-content">
+                            <li>技术栈：<mark>Java+Linux+Hadoop</mark></li>
+                            <li>
+                                <i class="fa fa-paper-plane-o" aria-hidden="true"></i>
+                                [目标]探讨架设基于Hadoop的大数据平台的方法并实践
+                                <br/>
+                                <i class="fa fa-users" aria-hidden="true"></i>
+                                [团队]共3位同学，本人作为成员
+                                <br/>
+                                <i class="fa fa-bars" aria-hidden="true"></i>
+                                [贡献]学习Linux、Java、Hadoop基础，完成搭建分布式大数据处理平台，并进行试验性处理数据；主要负责项目技术上的实现、论文技术部分的编写
+                                <br/>
+                                <i class="fa fa-thumbs-o-up" aria-hidden="true"></i>
+                                [成果]发表论文《基于Hadoop的大数据平台架设探讨》</li>
+                        </ul>
+                    </li>
                     <li>
-                        <h3>曾获统一冰红茶“再来一瓶”奖</h3>
-                        <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam。
-                        </p>
-                    </li> 
+                        <h3>
+                            <span>[2]基于树莓派的眼镜式眼动仪（省级创新项目）</span>
+                            <span class="link">
+                                <a href="https://github.com/Isaac-Deng/eyetracker-raspberrypi" target="_blank">Demo（点我看项目）</a>
+                            </span>
+                            <time>2018.5-2019.11</time>
+                        </h3>
+                        <ul class="info-content">
+                            <li>技术栈：<mark>Python+MATLAB+Linux+树莓派+图像处理</mark></li>
+                            <li>
+                                <i class="fa fa-paper-plane-o" aria-hidden="true"></i>
+                                [目标]实现轻便的眼镜式眼动仪硬件，并具有眼动跟踪功能
+                                <br/>
+                                <i class="fa fa-users" aria-hidden="true"></i>
+                                [团队]共4位同学，本人作为负责人
+                                <br/>
+                                <i class="fa fa-bars" aria-hidden="true"></i>
+                                [贡献]项目绝大部分由本人完成，包括整体设计、硬件制作、软件实现、分析校准设计。难点在于眼动仪与主机的无线传输交互、瞳孔检测、瞳孔位置与前置摄像头画面的映射。（具体详见Demo链接）
+                                <br/>
+                                <i class="fa fa-thumbs-o-up" aria-hidden="true"></i>
+                                [成果]基于树莓派的眼镜式眼动仪软硬件系统，软件著作权与论文正在申报中
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </section>
+
+            <!-- 其它经历 -->
+            <section class="work info-unit">
+                <h2>
+                    <i class="fa fa-shopping-bag" aria-hidden="true"></i>其它经历</h2>
+                <hr/>
+                <ul>
                     <li>
-                        <h3>这一行也是为了凑版面</h3>
-                        <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam。
-                        </p>
-                    </li>                     
-            </div>
-            <div class="aboutme info-unit right-paragraph">
-                <h2 class="info-header"><i class="iconfont icon-flower"></i> <span class="info-title">自我评价</span></h2>
-                <hr>
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                </p>
-            </div>
-        </div>
-    </div>
+                        <h3>
+                            <span>[1]加入向燕辉教授课题组学习</span>
+                            <time>2019.2-2019.6</time>
+                        </h3>
+                        <ul class="info-content">
+                        	<li>因对认知神经科学的兴趣，加入研究此方向的向燕辉教授的课题组。</li>
+                            <li>在向老师的课题组中，每周定时开组会，有文献报告及讨论</li>
+                            <li>做过一次英文文献简报《幼儿在解释道德规范和传统规则的判断时给予同伴的原因》，编写了一篇科普小论文</li>
+                            <li>期间通过严超赣老师的网课粗略学习DPABI的分析方法。由此对认知神经科学的脑功能成像研究产生了浓厚兴趣。</li>
+                            <li>长期的听报告、讨论和阅读文献，极大地提高我的外文文献阅读能力、科研思维能力</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <h3>
+                            <span>[2]辅修毕业论文《养育动机量表(PMS)在中国的适用性研究》</span>
+                            <time>2018.11-2019.5</time>
+                        </h3>
+                        <ul class="info-content">
+                            <li>在张利燕老师的指导下，独立完成的论文</li>
+                            <li>学习并实践从选题研究、开题报告、进一步阅读文献研究、联系国外作者、设计问卷、收发问卷、SPSS数据分析、得出结论的全过程</li>
+                            <li>锻炼了本人独立思考与科研能力，提升了中外文献阅读能力</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <h3>
+                            <span>[3]软件著作权《光纤预制棒质量在线分类系统》</span>
+                            <time>2018.9-2018.10</time>
+                        </h3>
+                        <ul class="info-content">
+                            <li>帮助刘金平老师已完成的程序设计进行文字描述申请软件著作权</li>
+                            <li>提升了对软件著作权的理解，提升申请软件著作权的能力</li>
+                            <li>阿里云上的云服务器需要通过局域网接收带传感器的单片机通过无线传输的信息，并进行解析进一步加工，同时把处理后的信息传送到前端进行显示；反过来，需要把前端的控制信息传到单片机进行实时控制。视频流服务需要使用摄像头通过流式传输传到服务器并实时监控</li>
+                            
+                        </ul>
+                    </li>
+                    <li>
+                        <h3>
+                            <span>[4]主修毕业论文《高速数据存储系统文件管理技术研究》</span>
+                            <time>2019.12-2020.5</time>
+                        </h3>
+                        <ul class="info-content">
+                            <li>在田海山老师的指导下，独立完成论文</li>
+                            <li>学习FAT、exFAT文件系统的原理并进行MATLAB仿真学习</li>
+                            <li>研究对文件系统的改进方法并对其进行MATLAB仿真验证</li>
+                            <li>锻炼本人独立思考与科研实验能力，提升中外文献资料阅读能力</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <h3>
+                            <span>[5]考研——中国科学院心理研究所认知神经科学脑功能成像方向</span>
+                            <time>2019.7-2020.x</time>
+                        </h3>
+                        <ul class="info-content">
+                            <li>本人在学习心理学后对认知神经科学具有浓厚的兴趣</li>
+                            <li>在对严超赣老师的DPABI网课学习后，兴趣更大，并报考了严老师的脑功能成像硕士研究生</li>
+                            <li>深入学习了认知神经科学、神经生物学的专业内容，打下坚实的专业基础</li>
+                            <li></li>
+                        </ul>
+                    </li>
+                </ul>
+            </section>
+
+            <!-- 自我评价 -->
+            <section class="work info-unit">
+                <h2>
+                    <i class="fa fa-pencil" aria-hidden="true"></i>自我评价/期望</h2>
+                <hr/>
+                <p>我的人生信条是“<mark>尽人事，以观天命</mark>”,是一个喜欢挑战自我、会尽力达到自己目标的人。假如达不到便是“取乎其上，得乎其中”，这些奋斗即使最终失败都会使我变得更强大。</p>
+                <p>本人报考了2020年研究生招生考试，考中国科学院心理研究所认知神经科学脑功能成像方向，是严超赣教授的方向。</p>
+                <p>下一步计划是提前为研究生复试作准备，同时学习更多专业知识，为将来可能的研究生工作打好基础。（希望能如愿以偿）</p>
+            </section>
+        </section>
+    </article>
+    <script src="./assets/js/index.js"></script>
 </body>
 
 </html>
