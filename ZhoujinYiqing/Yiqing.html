@@ -1,0 +1,148 @@
+﻿<!DOCTYPE html>
+<!-- saved from url=(0028)https://corona.hunnu.edu.cn/ -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta name="viewport" content="width=device-width">
+  <title>疫情助手</title>
+  <link href="./Yiqing_files/bootstrap.min.css" rel="stylesheet" type="text/css">
+  <link href="./Yiqing_files/Main.css" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="./Yiqing_files/font-awesome.min.css">
+</head>
+<body data-gr-c-s-loaded="true">
+  <script type="text/javascript" src="./Yiqing_files/jquery-3.5.0.min.js.下载"></script>
+  <script type="text/javascript" src="./Yiqing_files/popper.min.js.下载"></script>
+  <script type="text/javascript" src="./Yiqing_files/bootstrap.min.js.下载"></script>
+  <div class="body">
+    <div class="fixed-top border-secondary shadow-sm row" style="background-color:#e6eaee;z-index:9500!important;">
+      <div class="col-6 pt-1 pb-1 pl-3">
+        <a class="fa fa-home btn text-light bg-danger m-1" href="https://corona.hunnu.edu.cn/"> </a>
+      </div>
+      <div class="col-6 pt-1 pb-1 pr-3 text-right">
+        <a class="fa fa-power-off btn text-light bg-secondary m-1"></a>
+      </div>
+    </div>
+    <div style="margin-top: 3.5rem!important">
+      
+
+<link href="./Yiqing_files/style.css" rel="stylesheet" type="text/css">
+<script src="./Yiqing_files/script.js.下载"></script>
+<script src="./Yiqing_files/js"></script><script src="./Yiqing_files/convertor.js.下载" type="text/javascript"></script>
+<script src="./Yiqing_files/citys.js.下载"></script>
+<style>
+  select.location {
+    color: #495057;
+    line-height: 1.5;
+    font-size: .875rem;
+    padding: .25rem 0rem;
+    height: calc(1.5em + .5rem + 2px);
+  }
+</style>
+<div class="container">
+
+<div class="row">
+  <div class="col-3 pr-0">
+    <img class="img-fluid img-thumbnail rounded-circle avatar" src="./Yiqing_files/201630133029">
+  </div>
+  <div class="col-9 pt-3">
+    <h4 class="font-weight-bold">周进</h4>
+    <div>
+        <span class="small">物理与电子科学学院&nbsp;&nbsp;</span>
+    </div>
+  </div>
+</div>
+  <div class="card">
+    <div class="card-header">
+      <div class="d-inline-block">
+        常用工具&nbsp;&nbsp;<a href="https://corona.hunnu.edu.cn/#" class="fa fa-arrow-circle-up text-danger" id="tbSwitch"></a>
+      </div>
+      <div class="d-inline-block pull-right small pt-1">
+        <a href="http://www.xinhuanet.com/politics/xxgzbdgrdfyyq/index.htm">实时动态&nbsp;&gt;&gt;</a>
+      </div>
+    </div>
+    <div class="card-body pt-2 pb-2" id="tbPanel">
+      <div class="row">
+        <div class="col-3 mb-3" data-url="/Home/Record">
+          <div class="p-2">
+            <img class="img-fluid" src="./Yiqing_files/daka.png">
+          </div>
+          <div class="text-center">
+            打卡记录
+          </div>
+        </div>
+        <div class="col-3 mb-3" data-url="/Home/Record">
+          <div class="p-2">
+            <img class="img-fluid" src="./Yiqing_files/jiankangka.png">
+          </div>
+          <div class="text-center">
+            电子健康卡
+          </div>
+        </div>
+              </div>
+    </div>
+  </div>
+    <form action="https://corona.hunnu.edu.cn/Home/Sign" method="post" onsubmit="javascript: { return CheckInput(); }">
+      <div class="card">
+        <div class="card-header">
+          <div class="d-inline-block">
+            健康打卡
+          </div>
+          <div class="d-inline-block pull-right small pt-1">
+            <a href="https://corona.hunnu.edu.cn/Home/HealthCard" target="_blank" class="fa fa-download text-primary">&nbsp;导出打卡记录</a>
+          </div>
+        </div>
+      <div class="card-body">
+        <div class="text-center">
+          今天已完成打卡！
+        </div>
+        <div class="mt-3 row">
+          <div class="col-6 offset-3">
+            <img class="img-fluid" src="./Yiqing_files/55f65842c3728d36fe199f2c4347411d.png">
+          </div>
+            <div class="col-12 text-center">
+              <script type="text/javascript">
+                var date = new Date();
+                document.write("2020年" + (date.getMonth() + 1) + "月" + date.getDate() + "日");
+              </script>
+            </div>
+          </div>
+      </div>
+      </div>
+    </form>
+</div>
+<script>
+  $(function () {
+    $('div[data-url]').click(function () {
+      if ($(this).data('url'))
+        document.location.href = $(this).data('url');
+    });
+
+    $('a#tbSwitch').click(function () {
+      switchToolbox();
+    });
+  });
+  function switchToolbox(state) {
+    if (state === true) {
+      $('a#tbSwitch').removeClass('fa-arrow-circle-down').addClass('fa-arrow-circle-up');
+      $('div#tbPanel').css('display', '');
+    }
+    else if (state === false) {
+      $('a#tbSwitch').removeClass('fa-arrow-circle-up').addClass('fa-arrow-circle-down');
+      $('div#tbPanel').css('display', 'none');
+    }
+    else {
+      state = $('a#tbSwitch').hasClass('fa-arrow-circle-down');
+      switchToolbox(state);
+    }
+  }
+</script>
+
+
+    </div>
+  </div>
+  <script>
+    $(function () {
+      $('img.avatar').bind('error', function () { $(this).attr('src', '/public/i/p.png'); });
+    });
+  </script>
+
+
+</body></html>
